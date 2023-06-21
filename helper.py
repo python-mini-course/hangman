@@ -6,26 +6,25 @@ RED = (255,0,0)
 FONT = pygame.font.SysFont('Roboto', 80)
 wrongGuessFont = pygame.font.SysFont('Roboto', 50)
 
-def wrong(Display, num):
+def drawHangman(Display, num):
   if(num == 0):
     return True
-  elif(num == 1):
-    pygame.draw.circle(Display, BLACK, (150,150),50,8)#head
-  elif(num == 2):
-    pygame.draw.line(Display, BLACK, (150,200),(150,300),8)#body
-  elif(num == 3):
-    pygame.draw.line(Display, BLACK, (150,210),(100,250),9)#lefthand
-  elif(num == 4):
-    pygame.draw.line(Display, BLACK, (150,210),(200,250),9)#righthand
-  elif(num == 5):
-    pygame.draw.line(Display, BLACK, (150,300),(100,350),9)#leftleg
-  elif(num == 6):
-    pygame.draw.line(Display, BLACK, (150,300),(200,350),9)#rightleg
+  elif(num == 1): #head
+    pygame.draw.circle(Display, BLACK, (150,150),50,8) 
+  elif(num == 2): #body
+    pygame.draw.line(Display, BLACK, (150,200),(150,300),8) 
+  elif(num == 3): #lefthand
+    pygame.draw.line(Display, BLACK, (150,210),(100,250),9) 
+  elif(num == 4): #righthand
+    pygame.draw.line(Display, BLACK, (150,210),(200,250),9) 
+  elif(num == 5): #leftleg
+    pygame.draw.line(Display, BLACK, (150,300),(100,350),9) 
+  elif(num == 6): #rightleg
+    pygame.draw.line(Display, BLACK, (150,300),(200,350),9) 
   else:
     return False
   
   return True
-
 
 def drawBoxes(Display, num):
   for x in range(num):
