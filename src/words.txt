@@ -1,0 +1,10 @@
+word
+apple
+banana
+bird
+pirate
+python
+tiger
+bergen
+juice
+table
