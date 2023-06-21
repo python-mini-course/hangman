@@ -2,7 +2,7 @@ import random
 
 def randomWordGenerator():
   listOfWords = []
-  f = open("./src/words.txt")
+  f = open("words.txt")
   for word in f:
     listOfWords.append(word.strip().upper())
 
